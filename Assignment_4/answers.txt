@@ -1,0 +1,17 @@
+Answer for 2nd Question:
+
+
+
+No. Locks are not required while retrieving an item form the hash table.
+
+
+
+Answer for 3rd Question:
+
+1. If two inserts are being done on different buckets in parallel, is a lock needed? 
+Ans: If we do two insert operations on two different bucket then in this case, lock is not needed. 
+But if two or more insert operations are working on a same bucket, then lock are needed to protect shared resources.
+
+2. What are the shared resources that need to be protected by mutexes?
+Ans: The buckets declared in the code are the shared resources that needs to be protected by mutexes.
+
